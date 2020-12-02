@@ -1,4 +1,7 @@
 language: ruby
+arch:
+  - amd64
+  - ppc64le
 bundler_args: --without development
 before_script: ./bin/ci/before_build
 script: "bundle exec rake spec:ci"
